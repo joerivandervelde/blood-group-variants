@@ -73,13 +73,14 @@ public class Main {
             while((nextVcfLine = tri.next()) != null)
             {
                 String[] split = nextVcfLine.split("\t", -1);
-                if(Integer.parseInt(split[1]) != Integer.parseInt(pos))
+                if(!split[1].equals(pos))
                 {
                     continue;
                 }
                 if(!split[3].equals(b.Ref))
                 {
                     throw new Exception("Ref allele did not match for: " + chrPos);
+                    // or, we can ignore and move on..
                 }
                 vr = new VcfRecord(vm, nextVcfLine.split("\t", -1));
             }
