@@ -131,6 +131,7 @@ public class BloodGroupTool {
             StringBuffer sb = new StringBuffer();
             for(String antigen : sampleToAntigens.get(sample))
             {
+                // TODO which ones to omit ?
                 if(!antigen.equalsIgnoreCase("Wild-type") && !antigen.contains("No expression")){
                     sb.append(antigen);
                     sb.append( ", ");
