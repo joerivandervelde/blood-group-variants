@@ -21,7 +21,7 @@ public class Main {
         if(args.length != 4)
         {
             System.out.println("Please supply:");
-            System.out.println("- File location of reference data ('Montemayor-Garcia_etal_2018_SupplTable1_fix.txt')");
+            System.out.println("- File location of reference data ('Montemayor-Garcia_2018_ST1.tsv' located in blood-group-variants/data/).");
             System.out.println("- If you use genome build 37 or 38 (either 'b37' or 'b38')");
             System.out.println("- File location of a GZipped VCF to be analyzed (ending in '.vcf.gz', must be accompanied by index file with same file name ending in '.vcf.gz.tbi')");
             System.out.println("- Output file location. May not exist yet.");
@@ -31,7 +31,7 @@ public class Main {
         File referenceData = new File(args[0]);
         if(!referenceData.exists())
         {
-            System.out.println("Input reference file not found at " + referenceData.getAbsolutePath() + ". Suggesting to supply 'Montemayor-Garcia_etal_2018_SupplTable1_fix.txt' (located in blood-group-variants/data/).");
+            System.out.println("Input reference file not found at " + referenceData.getAbsolutePath() + ". Suggesting to supply 'Montemayor-Garcia_2018_ST1.tsv' located in blood-group-variants/data/.");
             System.exit(0);
         }
 
