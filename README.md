@@ -12,11 +12,11 @@ org.molgenis:vcf-io:1.1.1
 
 Download the JAR, required data, a demo file, and run.
 ```
-wget https://github.com/joerivandervelde/blood-group-variants/releases/download/v0.0.1/blood-group-variants-0.0.1.jar
+wget https://github.com/joerivandervelde/blood-group-variants/releases/download/v0.0.2/blood-group-variants-0.0.2.jar
 wget https://raw.githubusercontent.com/joerivandervelde/blood-group-variants/master/data/Montemayor-Garcia_2018_ST1.tsv
 wget https://github.com/joerivandervelde/blood-group-variants/raw/master/data/b37demo.vcf.gz
 wget https://github.com/joerivandervelde/blood-group-variants/raw/master/data/b37demo.vcf.gz.tbi
-java -jar blood-group-variants-0.0.1.jar Montemayor-Garcia_2018_ST1.tsv b37 b37demo.vcf.gz b37demo_out.txt
+java -jar blood-group-variants-0.0.2.jar Montemayor-Garcia_2018_ST1.tsv b37 b37demo.vcf.gz b37demo_out.txt
 ```
 
 Typical usage:
@@ -26,7 +26,7 @@ java -jar blood-group-variants.jar [reference] [genomebuild] [input vcf] [output
 
 Example usage:
 ```
-java -jar blood-group-variants-0.0.1.jar \
+java -jar blood-group-variants-0.0.2.jar \
 path/to/data/Montemayor-Garcia_2018_ST1.tsv \
 b37 \
 patho/to/my/input.vcf.gz \
