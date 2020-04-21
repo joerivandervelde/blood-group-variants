@@ -35,6 +35,7 @@ patho/to/my/output.txt
 
 ## To do
 - Check how to properly use annotations
+- Report missing and negative markers
 - Handle non-ASCII annotation data
 - Unit and integration testing
 - Proper dependency management
