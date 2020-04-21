@@ -137,8 +137,11 @@ public class BloodGroupTool {
                     sb.append( ", ");
                 }
             }
-            sb.delete(sb.length()-2, sb.length());
-            bw.write(sample +" has antigens: " + sb.toString() + "\n");
+            if(sb.length() > 0)
+            {
+                sb.delete(sb.length()-2, sb.length());
+                bw.write(sample +" has antigens: " + sb.toString() + "\n");
+            }
         }
         bw.flush();
         bw.close();
