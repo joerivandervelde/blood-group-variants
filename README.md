@@ -33,6 +33,15 @@ patho/to/my/input.vcf.gz \
 patho/to/my/output.txt
 ```
 
+Example output:
+```
+HG02938 has antigens: Jka/Jkb, Doa/Dob§ , P1+/-,Pk+, KCAM, Lu18/Lu19 (Aua/Aub), Lua/Lub, Hy (DO4), Yka, Fya/Fyb, FORS1, H- in secretions, Le(a-b-)
+HG00674 has antigens: Lu22 (LURC), JK weak, Doa/Dob§ , H+w in secretions, KCAM, FORS1, Jr(a-), Le(a-b-)
+NA19108 has antigens: Jka/Jkb, KCAM, Lu18/Lu19 (Aua/Aub), Hy (DO4), JK weak, Fya/Fyb, Wesb(CROM9)/Wesa(CROM8), FORS1, Lan+w, H- in secretions, Le(a-b-)
+HG01174 has antigens: Yta/Ytb, Fya/Fyb, P1+/-,Pk+, KCAM, H- in secretions, Le(a-b-)
+NA19681 has antigens: JK weak, Doa/Dob§ , P1+/-,Pk+, FORS1, Jr(a-), Le(a-b-), Yka
+```
+
 ## To do
 - Check how to properly use annotations
 - Report missing and negative markers
